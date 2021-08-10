@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "tauri:build": "vue-cli-service tauri:build",
+    "tauri:serve": "vue-cli-service tauri:serve"
   },
   "dependencies": {
     "@chakra-ui/vue": "^0.3.13",
@@ -25,6 +27,7 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-chakra-ui": "~0.2.2",
+    "vue-cli-plugin-tauri": "~1.0.0-beta.3",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
