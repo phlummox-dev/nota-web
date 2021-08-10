@@ -17,6 +17,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Cache stuff
+        id: cache-tauri-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            src-tauri/target/
+          key: ${{ runner.os }}-tauri-build
+
       - name: setup node
         uses: actions/setup-node@v1
         with:
