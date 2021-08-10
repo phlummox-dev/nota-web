@@ -36,6 +36,8 @@ jobs:
       - name: install app dependencies and build it
         run: yarn && yarn build
 
+      - name: stuff
+        run: find src-tauri | tee src-tauri-files.txt
 
       # Upload artifacts
       - uses: actions/upload-artifact@v2
