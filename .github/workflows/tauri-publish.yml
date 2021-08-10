@@ -36,7 +36,9 @@ jobs:
       - name: install app dependencies and build it
         ##run: yarn && yarn build
         run: |
-          yarn tauri:build  
+          yarn global add @vue/cli
+          cargo install tauri-bundler
+          yarn && yarn tauri:build
 
       - name: stuff
         run: find src-tauri | tee src-tauri-files.txt
