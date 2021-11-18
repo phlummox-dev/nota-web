@@ -1,5 +1,7 @@
 # tauri-app
 
+bogus edit to get CI to re-run
+
 ## Project setup
 ```
 npm install
